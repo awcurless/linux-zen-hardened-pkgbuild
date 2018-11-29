@@ -5,7 +5,7 @@
 
 #pkgbase=linux-zen           # Build stock -zen kernel
 pkgbase=linux-zen-hardened-arch      # Build kernel with a different name
-_mainlinever=4.19.2
+_mainlinever=4.19.5
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
@@ -30,7 +30,7 @@ validpgpkeys=(
   'E3FE2B02A7EF400372BB90DDE2A03EFE985AF9E6'  # Adrian Curless
 )
 sha256sums=('SKIP'
-            '6c96e9bf808b8e2f51cb1b3cd67d630eeccac24cfc248af7d34cecae416ec198'
+            'cd87cdc0364ce34fe3477261dc23dfe577a69e8751da0511fb927e86b6cc3c9c'
             'ae2e95db94ef7176207c690224169594d49445e04249d2499e9d2fbc117a0b21'
             '75f99f5239e03238f88d1a834c50043ec32b1dc568f2cc291b07d04718483919'
             'ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65')
@@ -65,7 +65,7 @@ prepare() {
 
 build() {
   cd $_srcname
-  make -j `nproc` bzImage modules
+  make -j`nproc` bzImage modules
 }
 
 _package() {
