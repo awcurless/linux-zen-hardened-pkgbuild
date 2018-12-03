@@ -5,7 +5,7 @@
 
 #pkgbase=linux-zen           # Build stock -zen kernel
 pkgbase=linux-zen-hardened-arch      # Build kernel with a different name
-_mainlinever=4.19.5
+_mainlinever=4.19.6-1
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
@@ -27,7 +27,7 @@ validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds
   '647F28654894E3BD457199BE38DBBDC86092693E'  # Greg Kroah-Hartman
   '8218F88849AAC522E94CF470A5E9288C4FA415FA'  # Jan Alexander Steffens (heftig)
-  'E3FE2B02A7EF400372BB90DDE2A03EFE985AF9E6'  # Adrian Curless
+  '4F76D85339A35D8692D0C1885F90933DADA12DD9'  # Adrian Curless
 )
 sha256sums=('SKIP'
             'e791b3b68fee00ecea5db23914ffd1b9ed6195f99c436ed6d2d7ec867d1d37a9'
