@@ -5,7 +5,7 @@
 
 #pkgbase=linux-zen           # Build stock -zen kernel
 pkgbase=linux-zen-hardened-arch      # Build kernel with a different name
-_mainlinever=4.20
+_mainlinever=4.20.2
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
@@ -30,7 +30,7 @@ validpgpkeys=(
   '4F76D85339A35D8692D0C1885F90933DADA12DD9'  # Adrian Curless
 )
 sha256sums=('SKIP'
-            'bb2aa3742864bc60099433637520453cdde2e6fc68f7d590a55889b5f245ce45'
+            'e9dcf0ca37cf047dc87a50ed3a76413732aaf3a1306284a83415cd1e42ae942b'
             'ae2e95db94ef7176207c690224169594d49445e04249d2499e9d2fbc117a0b21'
             '75f99f5239e03238f88d1a834c50043ec32b1dc568f2cc291b07d04718483919'
             'ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65')
