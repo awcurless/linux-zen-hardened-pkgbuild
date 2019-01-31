@@ -3,7 +3,6 @@
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
-#pkgbase=linux-zen           # Build stock -zen kernel
 pkgbase=linux-zen-hardened-arch      # Build kernel with a different name
 _mainlinever=4.20.5
 _srcver=$_mainlinever-zen-hardened
