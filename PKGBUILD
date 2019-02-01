@@ -1,7 +1,4 @@
 # Maintainer: Adrian Curless <awcurless@wpi.edu>
-# Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
-# Contributor: Tobias Powalowski <tpowa@archlinux.org>
-# Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgbase=linux-zen-hardened-arch      # Build kernel with a different name
 _mainlinever=4.20.6
@@ -23,9 +20,6 @@ source=(
   linux.preset   # standard config files for mkinitcpio ramdisk
 )
 validpgpkeys=(
-  'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds
-  '647F28654894E3BD457199BE38DBBDC86092693E'  # Greg Kroah-Hartman
-  '8218F88849AAC522E94CF470A5E9288C4FA415FA'  # Jan Alexander Steffens (heftig)
   '4F76D85339A35D8692D0C1885F90933DADA12DD9'  # Adrian Curless
 )
 sha256sums=('SKIP'
