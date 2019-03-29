@@ -1,7 +1,7 @@
 # Maintainer: Adrian Curless <awcurless@wpi.edu>
 
 pkgbase=linux-zen-hardened     # Build kernel with a different name
-_mainlinever=5.0.4
+_mainlinever=5.0.5
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
@@ -20,7 +20,8 @@ source=(
   linux.preset   # standard config files for mkinitcpio ramdisk
 )
 validpgpkeys=(
-  '4F76D85339A35D8692D0C1885F90933DADA12DD9'  # Adrian Curless
+  # '4F76D85339A35D8692D0C1885F90933DADA12DD9'  # Adrian Curless
+  '307198EB92B5CFD8F6A596289D8E84C6C52152F7'
 )
 sha256sums=('SKIP'
             '92a77e787fef1bbb973996f204e80409646ca4f5cb839227f434f6bbcb5e30ac'
