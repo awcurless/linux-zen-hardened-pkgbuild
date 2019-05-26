@@ -1,19 +1,19 @@
 # Maintainer: Adrian Curless <awcurless@wpi.edu>
 
 pkgbase=linux-zen-hardened     # Build kernel with a different name
-_mainlinever=5.0.18
+_mainlinever=5.1.5
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
 pkgdesc="The linux ZEN kernel with the hardened patchset applied"
 arch=(x86_64)
-url="https://github.com/awcurless/zen-kernel/commits/v$_srcver"
+url="https://github.com/awcurless/zen-hardened/commits/v$_srcver"
 license=(GPL2)
 makedepends=(linux-firmware mkinitcpio xmlto kmod inetutils bc libelf git python-sphinx graphviz)
 options=('!strip')
-_srcname=zen-kernel
+_srcname=zen-hardened
 source=(
-  "$_srcname::git+https://github.com/awcurless/zen-kernel?signed#tag=v$_srcver"
+  "$_srcname::git+https://github.com/awcurless/zen-hardened?signed#tag=v$_srcver"
   config         # the main kernel config file
   60-linux.hook  # pacman hook for depmod
   90-linux.hook  # pacman hook for initramfs regeneration
