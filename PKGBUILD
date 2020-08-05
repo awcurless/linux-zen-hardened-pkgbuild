@@ -1,7 +1,7 @@
 # Maintainer: Adrian Curless <awcurless@wpi.edu>
 
 pkgbase=linux-zen-hardened     # Build kernel with a different name
-_mainlinever=5.7.11
+_mainlinever=5.7.12
 _srcver=$_mainlinever-zen-hardened
 pkgver=${_srcver//-/.}
 pkgrel=1
